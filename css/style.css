@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+*{
+    border:  0;  
+    margin: 0;
+}
+/*Header/navbar*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;   
+    background: #EFF1ED;
+    box-shadow: 0px 0px 8px rgba(80, 90, 91, 0.2);
+}
+nav{
+    margin-left: 180px;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+   
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding: 8px 25px;
+    align-items: center;
+    margin-top: 20px;
+}
+nav a{
+    font-family: 'Inter';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;  
+    color: #505A5B;
+}
+.botao{
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 235px;
+    height: 61px;
+    background: #505A5B;
+    border-radius: 8px;
+}
+
+            @media (max-width: 900px){
+                header{
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+                }
+                nav{
+                    margin-left: 0;
+                }
+                nav ul{
+                    flex-direction: column;
+                }
+                
+            }
+/*hero*/
+.hero{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc; 
+    padding: 300px 0;        
+    text-align: right;
+}
+.textohero{
+    width: 90%;
+    
+}
+.textohero h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 103px;
+    line-height: 156px;
+    color: white;
+}
+.textohero p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 52px;
+    color: white;
+}
+            @media (max-width: 800px){
+                .hero{
+                    padding: 0%;
+                    }
+            }
+/*Storia*/
+.storia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.textostoria{
+    margin-top: 15%;
+    color: #505A5B;
+}
+.imagemstoria{
+    width: 476px;
+    height: 739px;
+    background-image: url("../img/national-cancer-institute-UK0lzD16BxI-unsplash\ 1.png");
+    margin-left: 15%;
+    background-position: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-radius: 20px;
+
+}
+.texto1Storia{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+.texto2Storia{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+}
+.storia h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+}
+
+            @media (max-width: 800px){
+                .storia{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .imagemstoria{
+                    width: 100%;
+                    margin: 0%;
+                    margin-top: 70px;
+                }
+                .textostoria{
+                    width: 100%;
+                    height: 771px;
+                }   
+            }
+/*Otica*/
+.ottica{
+    background-color: #505A5B;
+}
+.ottica2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.textootica{
+    margin: 15%;
+}
+.textootica h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    color: #EFF1ED;
+}
+.texto1Otica{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #E8EBE4;
+}
+.texto2Otica{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #E8EBE4;
+}
+.imagemottica{
+    background-image: url("../img/annisa-ica-2hrKrytSI1Q-unsplash\ 1.png");
+    width: 575px;
+    height: 553px;
+    margin-top: 15%;
+    border-radius: 20px;
+}
+.brand{
+    margin-top: 8%;
+    text-align: center;
+}
+.textoBrand{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    color: #EFF1ED;
+}
+.loghi{
+    display: flex;
+    justify-content: center;
+}
+.loghi div{
+    margin: 35px;
+}
+
+            @media (max-width: 800px){
+                .ottica{
+                    padding-top: 40px;
+                }
+                .ottica2{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .imagemottica{
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 400px;
+                }
+                .textootica{
+                    width: 100%;
+                    height: 550px;
+                    margin: 0;
+                }
+                .loghi{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+/*Visita*/
+.visita{
+    width: 100%;
+    
+    height: 915px;  
+}
+.imagemvisita{
+    background-image: url("../img/david-travis-aVvZJC0ynBQ-unsplash\ 1.png");
+    margin-top: 8%;
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.textovisita{
+    width: 575px;
+    text-align: center;
+    margin: auto;
+}
+.visita h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    color: #505A5B;
+}
+.texto1Visita{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #505A5B;
+}
+.texto2Visita{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #333333;
+}
+
+
+            @media (max-width: 800px){
+                .visita{
+                    width: 100%;
+                    height: 1200px;
+                }
+                .textovisita{
+                    width: 384px;
+                }
+                
+            }
+/*Footer*/
+footer{
+    margin-top: 30px;
+    background-color: #505A5B;
+    text-align: center;
+    
+}
+.gridfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.otticafooter{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #E8EBE4;
+}
+footer ul{
+    list-style: none;
+}
+footer li a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #E8EBE4;
+}
+.orari {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E8EBE4;
+}
+.indicazioni{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E8EBE4;
+    
+}
+.credits{
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #E8EBE4;
+}
+            @media (max-width: 800px){
+                footer{
+                    height: 515px;
+                }
+                .gridfooter{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
